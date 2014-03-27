@@ -7,3 +7,13 @@
 4. Lastly create an IBOutlet for the Tableview by holding control and clicking on the Tableview, then clicking within the @interface section of your view controller(.m file)
 
 ##Table Data Creation
+1. First create your blank array within the @interface section
+
+
+    @property (strong, nonatomic) NSMutableArray *tableArray;
+
+2. Next we must tell the table what source of data it will be using to populate the table, so we must set the table view data source, and we must allocate for the array in which we will be storing our table data.
+
+
+    self.tableView.dataSource = self;
+    self.tableArray = [[
