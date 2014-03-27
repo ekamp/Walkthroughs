@@ -34,7 +34,6 @@
 5. Finally we have to implement the cellForRowAtIndex function in order tell our TableView what we want our cells to contain.
 
 
-    -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
     -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
     {
         static NSString *cellIdentifier = @"myTableViewCell";
