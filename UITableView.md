@@ -34,15 +34,7 @@
 5. Finally we have to implement the cellForRowAtIndex function in order tell our TableView what we want our cells to contain.
 
 
-    -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath 
-    {
-        static NSString *cellIdentifier = @"myTableViewCell";
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-        NSString *tableInformation = [self.tweetsArray objectAtIndex:indexPath.row];
-        [cell.textLabel setText:tableInformation];
-        [cell.detailTextLabel setText:@"Some additional information we wish to display"];
-        return cell;
-    }
+    -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 
 Then run your program to check that your information is there!!
     
