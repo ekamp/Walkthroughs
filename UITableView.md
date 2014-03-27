@@ -16,6 +16,7 @@
 
 
     self.tableView.dataSource = self;
+    self.tableView.delegate = self;
     self.tableArray = [[NSMytableArray alloc]init];
     
 3. In addition to changing things within our viewcontroller we must look at the viewcontroller header file in order to tell ios that we have a UITableview.</br>Therefore add the following to tell the compiler/program that we are using a tableview
