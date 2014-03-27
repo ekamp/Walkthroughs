@@ -47,5 +47,18 @@
             return cell;
         }
 
-Then run your program to check that your information is there!!
+
+##Getting input from a selected row
+
+- Must just add a simple built in method called didSelectRowAtIndexPath
+
+
+        - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+        {
+            NSLog(@"%d", indexPath.row); // you can see selected row number in your console;
+        }
+        
+- Simple as that ! Then from the indexPath.row you can determine which item in the array datasource was selected ^_^
+
+
     
