@@ -6,7 +6,7 @@
 3. Now select the prototype cell set its style to Subtitle and its id to myTableViewCell (Or whatever you want to refer to it as)
 4. Lastly create an IBOutlet for the Tableview by holding control and clicking on the Tableview, then clicking within the @interface section of your view controller(.m file)
 
-##Table Data Creation
+##Table Data Creation and implementation
 1. First create your blank array within the @interface section
 
 
@@ -43,4 +43,6 @@
         [cell.detailTextLabel setText:@"Some additional information we wish to display"];
         return cell;
     }
+
+Then run your program to check that your information is there!!
     
