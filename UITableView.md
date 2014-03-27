@@ -43,6 +43,7 @@
         [cell.detailTextLabel setText:@"Some additional information we wish to display"];
         return cell;
     }
+    
 
 Then run your program to check that your information is there!!
     
