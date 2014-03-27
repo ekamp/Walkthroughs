@@ -36,6 +36,15 @@
 
         - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
         {
+            static NSString *cellIdentifier = @"myTableViewCell";
+            UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+            
+            NSString *cellInformation = [self.tableArray objectAtIndex:indexPath.row];
+            
+            
+            [cell.textLabel setText:cellInformation];
+            [cell.detailTextLabel setText:@"Some additional Information"];
+            return cell;
         }
 
 Then run your program to check that your information is there!!
