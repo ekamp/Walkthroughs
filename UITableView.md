@@ -62,4 +62,36 @@
 - Simple as that ! Then from the indexPath.row you can determine which item in the array datasource was selected ^_^
 
 
-    
+##Adding in Section Headers
+- In order to add in section headers for your table you have to override the titleForHeaderInSection function
+- The following code will do so
+
+
+        -(NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+        {
+            NSString *sectionName;
+            switch (section)
+            {
+                case 0:
+                    sectionName = NSLocalizedString(@"yourtitle",@"yourtitle");
+                    break;
+                case 0:
+                    sectionName = NSLocalizedString(@"yourtitle",@"yourtitle");
+                    break;
+                default:
+                    sectionName = @"";
+                    break;
+            }
+            return sectionName;
+        }
+
+##Detecting Table Row Selection
+- In order to detect which item in the table is selected you must again override a method this time coined didSelectRowAtIndexPath.
+- The following code shows an example of this implementation 
+
+
+        -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath: (NSIndexPath *)indexPath 
+        {
+            Object selectedObject = [myTableArray objectAtIndex:indexPath.row];
+        }
+        
