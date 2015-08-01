@@ -1,4 +1,4 @@
 Walkthroughs
 ============
 
-Basic walkthroughs on programming concepts I have found difficult
+Basic walkthroughs on some iOS programming concepts I have found difficult
